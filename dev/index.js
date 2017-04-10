@@ -1,10 +1,3 @@
-require('jquery');
-require('bootstrap-loader');
-require('fullpage.js');
-require('fullpage.js/dist/jquery.fullpage.min.css');
-require('style-loader!css-loader!sass-loader!./style.scss');
-import $ from "jquery";
-$("#fullpage").fullpage({
-	sectionsColor: ['#3b63a3'],
-	responsiveWidth: 1280
-});
+require('bootstrap-sass/assets/stylesheets/_bootstrap.scss');
+require('vanilla-tilt/dist/vanilla-tilt.babel.js');
+require('./style.scss');

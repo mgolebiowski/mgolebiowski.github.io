@@ -1,3 +1,12 @@
+html {display:table; width:100%;}
+body, html{
+	padding: 0!important;
+	margin: 0!important;
+	background-color: #3b63a3;
+	height: 100%;
+}
+body {display:table-cell; text-align:center; vertical-align:middle;}
+
 body > *{
 	text-align:center;
 	color: white;
@@ -10,7 +19,9 @@ h4{
 	padding: 0 20px;
 }
 h3{
-	margin-bottop: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+    border-bottom: 2px white solid;
 }
 img{
 	width: 180px;
@@ -20,6 +31,7 @@ img{
 ul{
 	list-style-type: none;
 	font-size:15px;
+	padding-left:20px;
 	.fa-external-link{
 		font-size: 9px;
 	}
@@ -27,6 +39,7 @@ ul{
 li{
 	text-align: left;
 	line-height:30px;
+	
 }
 a, a:link, a:hover{
 	color: #fff;
