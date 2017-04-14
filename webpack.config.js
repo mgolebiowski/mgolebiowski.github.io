@@ -7,7 +7,7 @@ module.exports = {
   entry: './dev/index.js',
   module: {
   loaders: [
-		{ test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+		//{ test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
 		{
 			test: /\.scss$/,
 			use: ExtractTextPlugin.extract({
