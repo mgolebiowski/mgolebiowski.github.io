@@ -13,10 +13,10 @@
 		<link href="dist/styles.css" rel="stylesheet" async>
     </head>
     <body>
-		<div id="fullpage">
-			<div class="section">
+		<div>
+			<div>
 				<h1>Michał Gołębiowski</h1>
-				<img src="dist/happy-face.jpg" alt="my face" data-tilt />
+				<img src="dist/happy-face.jpg" class="face" alt="my face" data-tilt />
 				<h4>Full-stack developer, power engineering graduate, machine learning adept</h4>
 				<div class="container">
 					<div class="row">
@@ -26,8 +26,9 @@
 								<div class="col-md-3">
 									<h3>Portfolio</h3>
 									<ul>
-										<li><a href="http://www.eko-energia.agh.edu.pl"><i class="fa fa-external-link" aria-hidden="true"></i> Eko-Energia</a></li>
-										<li><a href="http://parkit-krk.github.io"><i class="fa fa-external-link" aria-hidden="true"></i> park.it</a></li>
+										<li><a href="http://www.eko-energia.agh.edu.pl"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> Eko-Energia</a></li>
+										<li><a href="http://parkit-krk.github.io"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> park.it</a></li>
+										<li><a href="#" onclick="openBox()"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i> Metronic AKP (Joomla)</a></li>		
 									</ul>
 								</div>
 								<div class="col-md-6">
@@ -76,6 +77,16 @@ document.write("<a href='mailto:"+link+"'><i class=\"fa fa-envelope\" aria-hidde
 						</div>
 						<div class="col-md-1"></div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="darkness">
+			<a class="prev">&#10094;</a>
+			<a class="next">&#10095;</a>
+			<div class="box-content">
+				
+				<div class="pic-main">
+					<img src="dist/metronic-main.png" />
 				</div>
 			</div>
 		</div>
