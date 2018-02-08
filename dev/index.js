@@ -12,8 +12,8 @@ document.querySelector(".darkness").onclick=function(e){
 		document.querySelector(".darkness").style.opacity = 0;
 		setTimeout(function(){
 			document.querySelector(".darkness").style.display = "none";
-		},300);		
-	}		
+		},300);
+	}
 }
 
 const slides=["dist/metronic-main.png","dist/metronic-produkt.png", "dist/metronic-mobile.png"];
@@ -21,14 +21,14 @@ var slideNr = 0;
 
 const prevSlide = function(){
 	--slideNr;
-	if(slideNr<0) 
+	if(slideNr<0)
 		slideNr = slides.length-1;
 	document.querySelector(".pic-main img").style.opacity = 0;
 	setTimeout(function(){
 		document.querySelector(".pic-main img").src=slides[slideNr];
 		document.querySelector(".pic-main img").style.opacity = 1;
-	}, 500);	
-	
+	}, 500);
+
 }
 const nextSlide = function(){
 	++slideNr;
@@ -46,7 +46,7 @@ touchEvt.on("swiperight", nextSlide);
 
 document.onkeydown = function(e){
 	e = e || window.event;
-	
+
 	if(e.keyCode == '37')
 		prevSlide();
 	else if(e.keyCode == '39')
@@ -54,14 +54,14 @@ document.onkeydown = function(e){
 }
 
 document.querySelector(".prev").onclick = prevSlide;
-document.querySelector(".next").onclick = nextSlide; 
+document.querySelector(".next").onclick = nextSlide;
 
 function openBox(){
 	document.querySelector(".darkness").style.display = "block";
 	setTimeout(function(){
 		document.querySelector(".darkness").style.opacity = 1;
 	},300);
-	
+
 }
 window.openBox = openBox;
 
