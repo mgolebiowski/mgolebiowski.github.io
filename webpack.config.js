@@ -1,5 +1,6 @@
 const path = require('path');
 var webpack = require("webpack");
+var CompressionPlugin = require("compression-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
@@ -24,7 +25,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-	new ExtractTextPlugin("styles.css"),
-    new webpack.optimize.UglifyJsPlugin({minimize: true})
+	  new ExtractTextPlugin("styles.css"),
+    new webpack.optimize.UglifyJsPlugin({minimize: true}),
+    new CompressionPlugin({
+      test: /(\.js$)|(\.css$)/
+    })
   ]
 };
