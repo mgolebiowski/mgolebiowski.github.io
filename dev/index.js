@@ -1,10 +1,12 @@
-require('bootstrap-sass/assets/stylesheets/_bootstrap.scss');
 require('vanilla-tilt/dist/vanilla-tilt.babel.js');
 require('hammerjs/hammer.js')
 require('./style.scss');
+var particleJs = require('particles.js');
+
 
 var touchEvt = new Hammer(document.querySelector(".darkness"));
 
+particlesJS.load('particles-js', 'dist/particlesjs-config.json');
 
 document.querySelector(".darkness").onclick=function(e){
 	if(e.target == this)

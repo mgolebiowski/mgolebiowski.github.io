@@ -1,3 +1,13 @@
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_reboot";
+@import "~bootstrap/scss/_root";
+@import "~bootstrap/scss/_type";
+@import "~bootstrap/scss/_images";
+@import "~bootstrap/scss/_code";
+@import "~bootstrap/scss/_grid";
+
 html {display:table; width:100%;}
 body, html{
 	padding: 0!important;
@@ -5,7 +15,6 @@ body, html{
   background: linear-gradient(to bottom right, #3b63a3, #4A7CCC);
 	height: 100%;
 }
-body {display:table-cell; text-align:center; vertical-align:middle;}
 
 body > *{
 	text-align:center;
@@ -13,6 +22,14 @@ body > *{
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
 }
+
+.app{
+  position: absolute;
+  left: 0;
+  top:10%;
+  width:100%;
+}
+
 h4{
 	margin-top: 20px;
 	margin-bottom:30px;
