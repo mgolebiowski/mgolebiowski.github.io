@@ -12,11 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap-loader": "^2.0.0",
-    "bootstrap-sass": "^3.3.7",
     "compression-webpack-plugin": "^1.1.6",
     "css-loader": "^0.28.0",
     "exports-loader": "^0.6.4",
-    "extract-text-webpack-plugin": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
     "file-loader": "^0.11.1",
     "imports-loader": "^0.7.1",
     "node-sass": "^4.5.2",
@@ -25,12 +24,16 @@
     "style-loader": "^0.16.1",
     "uglifyjs-webpack-plugin": "^0.4.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.3.3"
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.0"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "fullpage.js": "^2.9.4",
     "hammerjs": "^2.0.8",
     "jquery": "^3.2.1",
-    "vanilla-tilt": "^1.3.1"
+    "particles.js": "^2.0.0",
+    "vanilla-tilt": "^1.3.1",
+    "webpack": "^4.0.1"
   }
 }
