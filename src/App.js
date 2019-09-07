@@ -22,7 +22,7 @@ function App() {
             </ul>
           </div>
           <div className="content-item">
-            <h3>I did some awsome projects</h3>
+            <h3>I did some awesome projects</h3>
             <ul>
               <li><a href="http://www.eko-energia.agh.edu.pl/" rel="noopener noreferrer" target="_blank">Eko-Energia (Wordpress)</a></li>
               <li><a href="http://parkit-krk.github.io/" target="_blank" rel="noopener noreferrer">park.it</a></li>
