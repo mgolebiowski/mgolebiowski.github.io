@@ -1,5 +1,5 @@
-import React from 'react';
-import { render } from 'react-snapshot';
+import React from 'preact-compat';
+import { render } from 'preact-compat';
 import './index.css';
 import 'normalize.css';
 import App from './App';
