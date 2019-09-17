@@ -270,11 +270,6 @@ module.exports = function(webpackEnv) {
       runtimeChunk: true
     },
     resolve: {
-      alias: {
-        react: "preact/compat",
-        "react-dom/test-utils": "preact/test-utils",
-        "react-dom": "preact/compat" // Must be below test-utils
-      },
       // This allows you to set a fallback for where Webpack should look for modules.
       // We placed these paths second because we want `node_modules` to "win"
       // if there are any conflicts. This matches Node resolution mechanism.
@@ -294,7 +289,10 @@ module.exports = function(webpackEnv) {
       alias: {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-        "react-native": "react-native-web"
+        "react-native": "react-native-web",
+        react: "preact-compat",
+        "react-dom/test-utils": "preact/test-utils",
+        "react-dom": "preact/compat" // Must be below test-utils
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
