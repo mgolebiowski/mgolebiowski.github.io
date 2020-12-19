@@ -1,4 +1,4 @@
-import React from "preact-compat";
+import React from "preact/compat";
 
 import "./main.css";
 
@@ -6,7 +6,7 @@ export default () => {
   return (
     <div className="container">
       <div className="row">
-        <img className="my-face" src="face.jpeg" alt="My face" />
+        <img className="my-face" src="assets/face.jpeg" alt="My face" />
         <h1>Hi, I'm Michał</h1>
         <p>
           I am Fullstack JavaScript developer with three years of experience
@@ -26,15 +26,6 @@ export default () => {
         <div className="content-item">
           <h3>I did some awesome projects</h3>
           <ul>
-            <li>
-              <a
-                href="http://www.eko-energia.agh.edu.pl/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Eko-Energia (Wordpress)
-              </a>
-            </li>
             <li>
               <a
                 href="http://parkit-krk.github.io/"
