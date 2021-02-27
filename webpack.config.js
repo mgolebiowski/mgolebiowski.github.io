@@ -32,5 +32,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             h: ['preact/compat', 'createElement'],
         })
-    ]
+    ],
+    devServer: {
+        publicPath: '/dist/'
+    },
 };
