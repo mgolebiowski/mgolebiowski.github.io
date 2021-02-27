@@ -7,22 +7,13 @@
   text-align: center;
 }
 
+.row {
+  max-width: 700px;
+  margin: 0 10px;
+  background-color: white;
+}
+
 .my-face {
   width: 150px;
   border: #282c34 5px solid;
-}
-
-.flex-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.content-item {
-  flex-basis: 450px;
-  text-align: left;
-}
-
-.content-item h3 {
-  text-align: center;
 }

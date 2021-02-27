@@ -9,43 +9,13 @@ export default () => {
         <img className="my-face" src="assets/face.jpeg" alt="My face" />
         <h1>Hi, I'm Michał</h1>
         <p>
-          I am Fullstack JavaScript developer with three years of experience
-          with Javascript, Vue.js and React.
+          and I am Fullstack JavaScript developer. 
+          <br />I spent last couple of years (about {new Date().getFullYear() - 2016} to be precise) on working with React, Vue.js, Node.js and couple of other technologies. 
+          I have expertise in builing backend and frontend web applications from initial architectural discussions to deployment. 
         </p>
-      </div>
-      <div className="row flex-row">
-        <div className="content-item">
-          <h3>I can help you with</h3>
-          <ul>
-            <li>Coding: JavaScript (ES6), TypeScript, SQL</li>
-            <li>Web design: HTML 5, CSS 3, Sass</li>
-            <li>Frameworks: Bootstrap, React, Vue</li>
-            <li>Tools: Webpack, Git, Linux, Node.js</li>
-          </ul>
-        </div>
-        <div className="content-item">
-          <h3>I did some awesome projects</h3>
-          <ul>
-            <li>
-              <a
-                href="http://parkit-krk.github.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                park.it
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://www.metronic.pl/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Metronic AKP (Joomla)
-              </a>
-            </li>
-          </ul>
-        </div>
+        <p>
+          If you have any questions or interesting projects don't hesitate to contact me using any option available in the footer (or you can <a target="_blank" rel="noopener noreferrer" href="https://tools.ietf.org/html/rfc1149">send a pigeon)</a>.
+        </p>
       </div>
     </div>
   );
