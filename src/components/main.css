@@ -4,16 +4,57 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  text-align: center;
 }
 
 .row {
-  max-width: 700px;
-  margin: 0 10px;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-face-container {
+  flex-basis: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .my-face {
-  width: 150px;
+  width:100%;
+  max-width: 150px;
   border: #282c34 5px solid;
+}
+
+.letter h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    margin: 0 30px;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+  }
+
+  .my-face-container {
+    max-width: 250px;
+    order: 2;
+  }
+
+  .my-face {
+    max-width: 250px;
+  }
+
+  .letter {
+    flex-basis: 60%;
+  }
+
+  .letter h1 {
+    text-align: left;
+  }
+}
+
+.letter {
+  padding: 0 10px;
 }
