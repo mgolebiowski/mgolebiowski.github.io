@@ -1,5 +1,3 @@
-import React from "preact/compat";
-
 import "./footer.css";
 
 export default () => {
